@@ -1,0 +1,436 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  position: sticky;
+  z-index: 999;
+  background-color: white;
+  top: 0;
+}
+
+.menu {
+  margin-top: 10px;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+.menu ul li {
+  padding: 0px 12px;
+  position: relative;
+}
+.menu ul li:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  top: 41px;
+}
+.menu ul li .dropdown {
+  position: absolute;
+  background-color: white;
+  top: 48px;
+  left: 0;
+  width: 230px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  border-top: 4px solid #ec5251;
+  z-index: 999;
+}
+.menu ul li .dropdown ul {
+  display: inline-block;
+}
+.menu ul li .dropdown ul li {
+  padding: 10px 15px;
+  width: 100%;
+  float: left;
+  position: relative;
+  transition: 0.5s;
+}
+.menu ul li .dropdown ul li:hover {
+  padding-left: 25px;
+}
+.menu ul li .dropdown ul li:hover .sub-dropdown {
+  visibility: visible;
+  opacity: 1;
+  left: 230px;
+  transform: scaleX(1);
+}
+.menu ul li .dropdown ul li:hover::before {
+  width: 14px;
+}
+.menu ul li .dropdown ul li::before {
+  position: absolute;
+  content: "";
+  left: 3px;
+  top: 22px;
+  background-color: #ec5251;
+  width: 0px;
+  height: 3px;
+  transition: 0.5s;
+}
+.menu ul li .dropdown ul li .sub-dropdown {
+  position: absolute;
+  top: 20px;
+  left: 230px;
+  width: 230px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  background-color: white;
+  border-left: 2px solid #ec5251;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.menu ul li .dropdown ul li a {
+  color: #746e6e;
+}
+.menu ul li .dropdown ul li a i {
+  float: right;
+}
+.menu ul li.home a {
+  color: #ec5251;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding-bottom: 18px;
+}
+.menu ul li a i {
+  padding-left: 5px;
+}
+
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+  top: 50%;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 59px;
+  outline: 2px solid white;
+  border-radius: 50%;
+  padding: 10px 10px;
+  background: transparent;
+}
+.carousel .carousel-control-next:hover,
+.carousel .carousel-control-prev:hover {
+  outline: 2px solid #ec5251;
+  background-color: #ec5251;
+}
+.carousel .carousel-control-prev {
+  margin-left: 59px;
+}
+.carousel button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.carousel-inner .carousel-item {
+  height: 800px;
+}
+.carousel-inner .carousel-item img {
+  filter: brightness(0.7);
+}
+.carousel-inner .carousel-item .stext {
+  position: absolute;
+  top: 147px;
+  left: 0;
+  width: 57%;
+  padding: 0 78px;
+  color: white;
+}
+.carousel-inner .carousel-item .stext h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+.carousel-inner .carousel-item .stext h1 span {
+  color: #ec5251;
+}
+.carousel-inner .carousel-item .stext p {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 40px 0px;
+}
+.carousel-inner .carousel-item .stext .bottons button {
+  padding: 12px 32px;
+  border: 0;
+  background: #ec5251;
+  color: white;
+  font-weight: 700;
+  border-radius: 4px;
+  margin-right: 20px;
+  border: 2px solid #ec5251;
+}
+.carousel-inner .carousel-item .stext .bottons .sbtn {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.carousel-inner .carousel-item .stext .bottons .sbtn:hover {
+  background-color: #ec5251;
+  border: 2px solid #ec5251;
+}
+.carousel-inner .carousel-item .elementors {
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+  gap: 36px;
+  margin: 0 94px;
+}
+.carousel-inner .carousel-item .elementors .elementor {
+  background: #ec5251;
+  padding: 23px 30px;
+  border-radius: 10px;
+}
+.carousel-inner .carousel-item .elementors .elementor .row {
+  align-items: self-start;
+}
+.carousel-inner .carousel-item .elementors .elementor .row .col-3 {
+  padding: 8px;
+}
+.carousel-inner .carousel-item .elementors .elementor .row .col-3 img {
+  width: 100%;
+  transition: 0.4s;
+  filter: none;
+}
+.carousel-inner .carousel-item .elementors .elementor .row .col-3 img:hover {
+  transform: scale(1.2);
+}
+.carousel-inner .carousel-item .elementors .elementor .row .col-9 h2 {
+  font-size: 29px;
+  color: white;
+  font-weight: 700;
+}
+.carousel-inner .carousel-item .elementors .elementor .row .col-9 p {
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.carousel-inner .carousel-item .elementors .elementor .row .col-9 p:hover {
+  transform: skew(-11deg);
+  margin-left: 2px;
+}
+
+.main-works .row .before-after.col-6:before {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 379px;
+  top: 26px;
+  left: 67px;
+  background: white;
+  z-index: 1;
+  transform: rotate(52deg);
+}
+.main-works .row .before-after.col-6:after {
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  content: "";
+  background: #ec5251;
+  top: 0;
+}
+.main-works .row .before-after .img {
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+  left: 61px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main-works .row .before-after .img img {
+  width: 100%;
+}
+.main-works .row .before-after .img2 {
+  position: absolute;
+  z-index: 3;
+  top: 225px;
+  right: -13px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main-works .row .before-after .img2 img {
+  width: 100%;
+}
+.main-works .row .col-6 span {
+  font-weight: 700;
+  color: #ec5251;
+}
+.main-works .row .col-6 h2 {
+  font-size: 49px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+.main-works .row .col-6 p {
+  color: #494848;
+}
+.main-works .row .col-6 ul {
+  list-style: none;
+  line-height: 42px;
+  padding: 10px 0px;
+}
+.main-works .row .col-6 ul li i.fa.fa-chevron-circle-right {
+  margin-right: 10px;
+  font-size: 17px;
+  color: #ec5251;
+}
+.main-works .row .col-6 button {
+  padding: 12px 32px;
+  border: 0;
+  background: #ec5251;
+  color: white;
+  font-weight: 700;
+  border-radius: 4px;
+  margin-right: 20px;
+  border: 2px solid #ec5251;
+}
+
+.main-eimg {
+  background-image: url(../image/bkgd3.jpg);
+  height: 650px;
+  position: relative;
+}
+.main-eimg .eimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 749px;
+  height: 650px;
+  text-align: center;
+  margin: auto;
+}
+.main-eimg .eimg .ctext h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: white;
+}
+.main-eimg .eimg .ctext button {
+  width: 80px;
+  height: 80px;
+  border: 0;
+  border-radius: 50%;
+  background: #ec5251;
+  box-shadow: 0 0 4px #838383;
+  margin-top: 68px;
+}
+.main-eimg .eimg .ctext button i.fa.fa-play {
+  color: white;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lists {
+  background: #ec5251;
+  text-align: center;
+  padding: 40px 35px;
+  border-radius: 7px;
+  position: absolute;
+  width: 87%;
+  margin: auto;
+  bottom: -77px;
+}
+.lists .row .col-3 {
+  border-right: 1px solid white;
+  padding: 0;
+  color: white;
+}
+.lists .row .col-3 h2 {
+  font-weight: 700;
+  font-size: 33px;
+}
+
+.main-courses {
+  margin-top: 200px;
+}
+.main-courses .courses {
+  width: 100%;
+  padding-top: 1px;
+  text-align: center;
+}
+.main-courses .courses h6 {
+  font-weight: 700;
+  color: #ec5251;
+}
+.main-courses .courses h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 63px;
+}
+.main-courses .courses .course-boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-courses .courses .course-boxes .course-box {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 17px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+.main-courses .courses .course-boxes .course-box .image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 7px rgb(202, 202, 202);
+}
+.main-courses .courses .course-boxes .course-box .image img {
+  width: 100%;
+  vertical-align: bottom;
+  transform: scale(1);
+  transition: 0.6s;
+}
+.main-courses .courses .course-boxes .course-box .image img:hover {
+  transform: scale(1.1);
+}
+.main-courses .courses .course-boxes .course-box .course-text {
+  width: 100%;
+  padding: 0 30px;
+  background: white;
+  border-top: 1px solid #d3caca;
+  padding-bottom: 15px;
+  box-shadow: 0 0 7px rgb(202, 202, 202);
+  text-align: left;
+}
+.main-courses .courses .course-boxes .course-box .course-text ul {
+  display: flex;
+  gap: 30px;
+}
+.main-courses .courses .course-boxes .course-box .course-text ul li {
+  font-size: 13px;
+  font-weight: 700;
+  color: grey !important;
+}
+.main-courses .courses .course-boxes .course-box .course-text ul li i {
+  color: #ec5251;
+  margin-right: 11px;
+  margin-top: 25px;
+}
+.main-courses .courses .course-boxes .course-box .course-text h2 {
+  width: fit-content;
+  font-weight: 600;
+  font-size: 22px;
+  font-family: sans-serif;
+  margin: 17px 0;
+  position: relative;
+}
+.main-courses .courses .course-boxes .course-box .course-text ul li {
+  list-style: none;
+  padding-bottom: 9px;
+  font-family: sans-serif;
+  color: var(--secondcolor);
+}
+.main-courses .courses .course-boxes .course-box .course-text ul li i.fa.fa-stop {
+  font-size: 12px;
+  padding-right: 5px;
+  color: #e66d36;
+}
+
+/*# sourceMappingURL=style.scc.map */

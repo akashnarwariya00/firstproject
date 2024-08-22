@@ -1,0 +1,694 @@
+
+
+/*# sourceMappingURL=style.css.map */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.uper-header {
+    width: 100%;
+    height: 40px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 50px;
+    align-items: center;
+    position: relative;
+}
+.left-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.left-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.left-menu ul li a i{
+    color: white;
+    font-size: 16px;
+}
+.left-menu ul li a i:hover{
+    color: red;
+}
+.right-menu {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.oright-menu {
+    display: flex;
+    gap: 20px;
+}
+.oright-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.oright-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.oright-menu ul li a:hover{
+    color: red;
+}
+.tright-menu {
+    display: flex;
+}
+.tright-menu ul {
+    display: flex;
+    gap: 20px;
+}
+.tright-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.tright-menu ul li a:hover{
+    color: red;
+}
+.tright-menu ul li a img {
+    width: 18px;
+    height: 12px;
+    margin-right: 5px;
+}
+.tright-menu ul li:hover .subdd{
+    display: block;
+}
+.subdd {
+    display: none;
+    width: 137px;
+    position: absolute;
+    box-shadow: 0 0 2px;
+    top: 40px;
+    right: 83px;
+    background: white;
+    z-index: 9;
+}
+
+.subdd ul {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 22px 17px 22px;
+    gap: 10px;
+    list-style: none;
+}
+.subdd ul li a{
+    color: black;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    padding: 0 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 9;
+    top: 40px;
+}
+.stikey {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    animation-name: tops;
+    animation-duration: .5s;
+}
+@keyframes tops{
+    0%{ transform: translateY(-100px);}
+    100%{ transform: translateY(0px)}
+}
+.stikey .menu ul li a,.stikey .side-icon ul li i {
+    color: black;
+}
+.stikey img{
+    filter: invert(1);
+}
+
+
+.logo {
+    width: 172px;
+    height: 37px;
+}
+.logo img {
+    width: 100%;
+}
+.menu {
+    margin-left: -127px;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 33px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.menu ul li a:hover{
+    border-bottom: 1px solid white;
+}
+.side-icon {
+    margin-right: 10px;
+}
+.side-icon ul {
+    display: flex;
+    list-style: none;
+    gap: 33px;
+}
+.side-icon ul li i {
+    font-size: 20px !important;
+    color: white;
+}
+.side-icon ul li:hover .dropd {
+         display: block;
+}
+
+.dropd {
+    display: none;
+    width: 400px;
+    height: 375px;
+    position: absolute;
+    border: 1px solid;
+    padding: 30px;
+    right: 140px;
+    top: 104px;
+    background: white;
+    z-index: 9;
+}
+.input-text {
+    padding-bottom: 20px;
+}
+.input-text p {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.input-text input[type="text"] {
+    width: 100%;
+    height: 45px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 7px 20px;
+    text-align: left;
+    box-shadow: none;
+    border-radius: 0;
+}
+.dropd button {
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: black;
+    font-size: 17px;
+}
+.forget {
+    margin-top: 14px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #bfbfbf;
+}
+.remember {
+    display: flex;
+    gap: 7px;
+}
+.remember p {
+    font-size: 13px;
+}
+.forget-p h6 {
+    font-size: 14px;
+    border-bottom: 1px solid;
+}
+.account-create {
+    padding-top: 18px;
+    text-align: center;
+}
+.account-create span {
+    font-size: 14px;
+    color: #c70000;
+    border-bottom: 1px solid #c70000;
+}
+
+
+
+
+.model {
+    position: absolute;
+    /* display: none; */
+    background: white;
+    box-shadow: 0 0 3px;
+    width: 100%;
+    height: 235px;
+    left: 0;
+    top: -277px;
+    padding: 40px 0;
+    z-index: 13;
+   
+}
+.activ{
+    display: block;
+    top: -40px;
+    transition: .5s;
+}
+
+.model .close {
+    width: 40px;
+    height: 40px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.model .close:hover{
+    background-color: #c70000 !important;
+}
+.model .close i.fa.fa-times {
+    color: white;
+}
+.model .head {
+    text-align: center;
+    width: 660px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.model .head h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.model .searchbar {
+    width: 660px;
+    position: relative;
+    height: 45px;
+    margin: auto;
+}
+.model .searchbar input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #e8e8e8;
+    padding: 7px 50px 7px 20px;
+}
+.model .searchbar i.fa.fa-search {
+    position: absolute;
+    right: 15px;
+    font-size: 23px;
+    margin-top: 13px;
+}
+.model .searchbar i.fa.fa-search:hover{
+    color: #c70000 !important;
+}
+.model .menu {
+    width: 660px;
+    margin: auto;
+    padding-top: 30px;
+}
+.model .menu ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.model .menu ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid;
+}
+.model .menu ul li a:hover{
+    color: #c70000;
+    border-bottom: 1px solid #c70000;
+}
+
+
+.slick-next {
+    right: 4px !important;
+    opacity: 0;
+}
+.slick-dots {
+    bottom: 50% !important;
+   
+    right: -600px !important;
+    transform: rotate(90deg) !important;
+  
+}
+
+.slick-dots li button {
+    width: 2px !important;
+    height: 2px !important;
+    color: transparent !important;
+    border: 1px solid white !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .80;
+    color: white !important;
+    width: 12px;
+    background: white;
+    height: 12px;
+    border-radius: 50%;
+}
+.slick-slide img {
+    display: block;
+    width: 100%;
+    margin-top: -80px;
+}
+.slick-vertical .slick-slide{
+    border: none !important;
+}
+
+.banner{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    height: 640px;
+    position: relative;
+}
+
+
+
+.category {
+    width: 100%;
+    float: left;
+    padding: 50px;
+}
+.category h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.catogory-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.catogory-box .box {
+    width: 375px;
+    height: 285px;
+    position: relative;
+    overflow: hidden;f
+    transform: scale(1);
+}
+.catogory-box .box:hover img{
+    transform: scale(1.2);
+   
+}
+.catogory-box .box .box-img {
+    width: 100%;
+}
+.catogory-box .box .box-img img {
+    width: 100%;
+    transition: .7s;
+}
+.box .box-text {
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.box .box-text h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+    color: white;
+    font-weight: 400;
+}
+.box .box-text button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 30px;
+    background: #fff;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+.box .box-text button:hover {
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+
+
+
+
+.arrivals {
+    width: 100%;
+    float: left;
+    padding: 50px;
+    border-bottom: 1px solid #c3c3c3;
+}
+.arrivals h1 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.main-product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.main-product .product {
+    width: 20%;
+    position: relative;
+}
+.main-product .product:hover .overlay-text ul {
+    margin-left: 180px;
+}
+.main-product .product:hover .l-lower{
+    bottom: 8px;
+}
+.product-img {
+    width: 100%;
+}
+.product-img img {
+    width: 100%;
+}
+.overlay-text {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 83%;
+    overflow: hidden;
+}
+.overlay-text span {
+    font-size: 12px;
+    padding: 2px 9px;
+    background: #c6213b;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.overlay-text ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 226px;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.overlay-text ul li {
+    width: 34px;
+    height: 34px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.overlay-text ul li:hover{
+    background: black;
+    color: white;
+}
+.l-lower {
+    position: absolute;
+    bottom: -35px;
+    margin-left: 10px;
+    transition: .3s;
+}
+.l-lower button {
+    width: 204px;
+    font-size: 14px;
+    padding: 8px 20px;
+    background: black;
+    color: white;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+}
+.l-lower button:hover{
+    background-color: #c6213b;
+}
+.lower-text h3 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.lower-text h3:hover{
+    color: #c6213b !important;
+  
+}
+
+
+
+
+.media {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    border-bottom: 1px solid #c3c3c3;
+}
+.media h1 {
+    font-size: 24px;
+    width: fit-content;
+    font-weight: 600;
+}
+.media-logo {
+    display: flex;
+    gap: 10px;
+}
+.media-logo button {
+    font-size: 16px;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid black;
+   
+    color: white;
+    background: black;
+}
+.media-logo button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.media-logo button i {
+    margin-right: 8px;
+}
+
+
+.banner-text {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    background: red;
+    z-index: 999999999999;
+    transform-origin: left top;
+}
+.banner-slide {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.slick-current .banner-text{
+    animation-name: text;
+    animation-duration: 0.9s;
+     animation-iteration-count: infinite;
+}
+@keyframes text{
+    0%{
+        transform: scaleY(90deg);
+    }
+    100%{
+        transform: scaleY(0deg);
+    }
+}
+
+
+.fotter {
+    width: 100%;
+    float: left;
+    /* margin: 70px 0px; */
+    padding: 70px 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c3c3c3;
+}
+.main-add {
+    width: 20%;
+    float: left;
+}
+.main-add .img {
+    width: 172px;
+    margin-bottom: 25px;
+}
+.main-add .img img {
+    width: 100%;
+}
+.main-add p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.main-add h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.main-head {
+    width: 12%;
+    float: left;
+}
+.main-head h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 27px;
+}
+.main-head ul {
+    list-style: none;
+    line-height: 33px;
+}
+.main-head ul li {
+    font-size: 14px;
+}
+
+
+
+
+.mail-side {
+    width: 34%;
+    float: left;
+}
+.mail-side h1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.mail.box {
+    width: 100%;
+    display: flex;
+    gap: 13px;
+}
+.mail.box input[type="email"] {
+    width: 222px;
+    padding: 12px 22px;
+}
+.mail.box button {
+    font-size: 16px;
+    padding: 13px 40px;
+    font-weight: 500;
+    color: white;
+    background: black;
+    border: none;
+}
+.logos {
+    margin-top: 44px;
+    display: flex;
+    gap: 25px;
+    font-size: 21px;
+}

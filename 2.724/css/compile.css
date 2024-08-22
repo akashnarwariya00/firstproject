@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  margin-top: 10px;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+.menu ul li {
+  padding: 0px 12px;
+  position: relative;
+}
+.menu ul li:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  top: 41px;
+}
+.menu ul li .dropdown {
+  position: absolute;
+  background-color: white;
+  top: 48px;
+  left: 0;
+  width: 230px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  border-top: 4px solid #ec5251;
+  z-index: 999;
+}
+.menu ul li .dropdown ul {
+  display: inline-block;
+  float: left;
+}
+.menu ul li .dropdown ul li {
+  padding: 10px 15px;
+  width: 100%;
+  float: left;
+  position: relative;
+  transition: 0.5s;
+}
+.menu ul li .dropdown ul li:hover {
+  padding-left: 25px;
+}
+.menu ul li .dropdown ul li:hover .sub-dropdown {
+  visibility: visible;
+  opacity: 1;
+  left: 230px;
+  transform: scaleX(1);
+}
+.menu ul li .dropdown ul li:hover::before {
+  width: 14px;
+}
+.menu ul li .dropdown ul li::before {
+  position: absolute;
+  content: "";
+  left: 3px;
+  top: 22px;
+  background-color: #ec5251;
+  width: 0px;
+  height: 3px;
+  transition: 0.5s;
+}
+.menu ul li .dropdown ul li .sub-dropdown {
+  position: absolute;
+  top: 20px;
+  left: 230px;
+  width: 230px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  background-color: white;
+  border-left: 2px solid #ec5251;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.menu ul li .dropdown ul li a {
+  color: #746e6e;
+}
+.menu ul li .dropdown ul li a i {
+  float: right;
+}
+.menu ul li.home a {
+  color: #ec5251;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding-bottom: 18px;
+}
+.menu ul li a i {
+  padding-left: 5px;
+}
+
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+  top: 50%;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 59px;
+  outline: 2px solid white;
+  border-radius: 50%;
+  padding: 10px 10px;
+  background: transparent;
+}
+.carousel .carousel-control-next:hover,
+.carousel .carousel-control-prev:hover {
+  outline: 2px solid #ec5251;
+  background-color: #ec5251;
+}
+.carousel .carousel-control-prev {
+  margin-left: 59px;
+}
+.carousel button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+/*# sourceMappingURL=compile.css.map */
